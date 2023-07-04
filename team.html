@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Members</title>
+    
+    <style>
+        body{
+            background-color: rgb(25, 25, 29);
+            color:#FF9933;
+            font-size: 45px;
+        }
+        .content{
+            text-align: center;
+            padding: 39px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        }
+        .content a {
+            float: none;
+            display: inline;
+            position: relative;
+        }
+        .Team{
+            text-align: center;
+        }
+        .Team ul{
+            display: inline-flex;
+            list-style: none;
+        }
+        .Team ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        .active, .Team ul li:hover{
+            background :    rgba(143, 47, 9, 0.912);
+            border-radius: 15px;
+            padding: 0px 9px 0px 9px;
+        }
+        .submenu{
+            display: none;
+        }
+        /* Submenu */
+        .Team ul li:hover .submenu{
+            display: block;
+            position: absolute;
+            color: #ebded2;
+            background-color: rgba(182, 91, 26, 0.685)  ;
+            margin-top: 1px;
+            border-radius: 13px;
+            text-align: left;
+            
+            padding: 5px;
+        }
+
+
+        .Team ul li:hover .submenu ul{
+            display: block;
+            margin: 10px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="content">
+        <b>Name </b> : Marsal <br>
+        <b>Branch </b> : ECE <br>
+        <b>Team Name </b> : W2 <br>
+        <div class="Team">
+        <ul>
+            <li class="active"><a href="#"> My Team </a>
+            <div class="submenu">
+                <ul>
+                    <li>ME</li>
+                    <li>Manish</li>
+                    <li>Manyata</li>
+                    
+                </ul>
+            </div>
+            </li>
+        </ul>
+        </div>
+    </div>
+</body>
+</html>
